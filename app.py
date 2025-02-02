@@ -3,7 +3,7 @@ import numpy as np
 import joblib
 
 # Load the trained Random Forest model
-model = joblib.load("walk_run_model.pkl")
+model = joblib.load("random_forest_best.pkl")
 
 # Streamlit app title
 st.title("Walk-Run Classification App")
