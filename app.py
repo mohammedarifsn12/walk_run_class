@@ -33,6 +33,10 @@ if st.button("Predict Activity"):
     features = [wrist, acceleration_x, acceleration_y, acceleration_z, gyro_x, gyro_y, gyro_z]
     result = predict_activity(features)
     
-    st.write(f"Predicted Activity: {result}")
+    if result == 0:
+        st.write("Predicted Activity: Person is Walking")
+    else:
+        st.write("Predicted Activity: Person is Running")
 
 # Optional: Add example data or more features if needed
+
