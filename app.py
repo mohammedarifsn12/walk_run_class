@@ -7,7 +7,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.metrics import accuracy_score
 
 # Load the trained model
-model = pickle.load(open('walk_run.sav', 'rb'))
+model = pickle.load(open('walk_run_new.sav', 'rb'))
 
 # Define a function to make predictions
 def predict_activity(features):
