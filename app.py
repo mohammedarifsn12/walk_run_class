@@ -37,8 +37,8 @@ if st.button("Predict Activity"):
     result = predict_activity(features)
     
     if result == 0:
-        st.write(f"Predicted Activity: Person is Walking ({wrist})")
+        st.write(f"Predicted Activity: Person is Walking ")
     else:
-        st.write(f"Predicted Activity: Person is Running ({wrist})")
+        st.write(f"Predicted Activity: Person is Running ")
 
 
